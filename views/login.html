@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Plukii</title>
+
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="/css/nprogress.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/sweetalert.css" rel="stylesheet">
+    <!-- Custom Theme Style -->
+    <link href="/css/custom.min.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+
+    <!--Scripts -->
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/sweetalert.min.js"></script>
+    <script type="text/javascript" src="/js/main.js"></script>
+
+    <!--Fav and touch icons-->
+    <link rel="shortcut icon" href="/images/icon.png">
+    <link rel="apple-touch-icon" href="/images/icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icon.png">
+    
+  </head>
+
+  <body class="login">
+    <div id="Cargando" style="display: none;">
+          <div id="Preloader"></div>
+          <h3>Cargando...</h3>
+    </div>
+    <div>
+      <a class="hiddenanchor" id="signup"></a>
+      <a class="hiddenanchor" id="signin"></a>
+
+      <div class="login_wrapper">
+        <div class="animate form login_form">
+          <section class="login_content">
+          <p style="text-align: center;color: red;font-size: 14px;">{{status}}</p>
+            <form>
+              <h1>Ingresar</h1>
+              <div>
+                <input type="text" class="form-control" placeholder="Usuario" id="LoginUsuario" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="Contraseña" id="LoginPass" required="" />
+              </div>
+              <div>
+                <a class="btn btn-default submit" id="Ingresar">Ingresar</a>
+                <a class="reset_pass" href="#">No recuerdas tu contraseña?</a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <p class="change_link">Eres nuevo?
+                  <a href="#signup" class="to_register"> Crea una cuenta </a>
+                </p>
+                <div class="clearfix"></div>
+                <br />
+                <div>
+                  <h1><i class="fa fa-car"></i> Plukii</h1>
+                  <p>©2017 Plukii by Galavi</p>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+
+        <div id="register" class="animate form registration_form">
+          <section class="login_content">
+            <form>
+              <h1>Crear Cuenta</h1>
+              <div>
+                <input type="text" class="form-control" placeholder="Usuario" id="Usuario" required="" />
+              </div>
+              <div>
+                <input type="email" class="form-control" placeholder="Correo" id="Correo" required="" />
+              </div>
+              <div>
+                <input type="password" class="form-control" placeholder="Contraseña" id="Pass" required="" />
+              </div>
+              <div>
+                <a class="btn btn-default submit" id="Crear">Crear</a>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="separator">
+                <p class="change_link">Ya eres usuario ?
+                  <a href="#signin" class="to_register"> Ingresar </a>
+                </p>
+
+                <div class="clearfix"></div>
+                <br />
+
+                <div>
+                  <h1><i class="fa fa-car"></i> Plukii</h1>
+                  <p>©2017 Plukii by Galavi</p>
+                </div>
+              </div>
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
